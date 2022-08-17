@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coding Home - <%- title %></title>
+    <title>Coding Home - 課程介紹 - 基礎前端 - HTML</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
@@ -15,20 +15,11 @@
     <header>
       <div class="container">
         <div class="d-flex justify-content-between py-4">
-          <% if(title == '首頁'){ -%>
-          <h1 class="mb-0">
-            <div class="logo_wrapper">
-              <a href="./index.html"><img src="./assets/images/logo.svg" alt="" class="logo d-none d-md-block w-100"></a>
-              <a href="./index.html"><img src="./assets/images/logo2.svg" alt="" class="logo-md d-block d-md-none w-100"></a>
-            </div>
-          </h1>
-          <% } else { -%>
-          <div class="logo_wrapper">
+                    <div class="logo_wrapper">
             <a href=""><img src="./assets/images/logo.svg" alt="" class="logo d-none d-md-block w-100"></a>
             <a href="./index.html"><img src="./assets/images/logo2.svg" alt="" class="logo-md d-block d-md-none w-100"></a>
           </div>
-          <% } -%>
-          <span class="material-icons text-primary d-md-none" data-bs-toggle="collapse" data-bs-target=".nav-sm">drag_handle</span>        
+                    <span class="material-icons text-primary d-md-none" data-bs-toggle="collapse" data-bs-target=".nav-sm">drag_handle</span>        
           <nav class="nav align-items-center justify-content-center d-none d-md-flex">
             <a class="nav-link text-18 text-white" href="./index.html">首頁</a>
             <a class="nav-link text-18 text-white" href="./courses.html">課程介紹</a>
@@ -49,7 +40,37 @@
       </nav>
     </header>
     <main>
-      <%- contents %>
+      
+<section>
+    <div class="container d-flex flex-column align-items-center">
+        <div class="d-flex flex-column w-100 row gy-lg-5 gx-0 align-items-center justify-contents-between mb-lg-6">
+            <div class="col-lg-10">
+                <div class="course-item d-lg-flex bg-tertiary-1 rounded-24 pt-4 py-lg-6 mb-3 mb-lg-0">
+                    <div class="col-lg-2 mx-lg-2">
+                        <img src="./assets/images/teacher01.jpg" alt="" class="lecturer-pic d-block mb-2 text-center">
+                        <p class="text-white text-center mb-24 mb-lg-0">Belinda</p>
+                    </div>
+                    <div class="px-5 pb-6 px-lg-0 pb-lg-0">
+                        <p class="course-name course-page text-20 text-white fw-bold mb-2">基礎前端 - HTML</p>
+                        <p class="text-primary mb-2">前端語言</p>
+                        <p class="text-white lh-base">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="square-decoration border border-1 border-white w-100 py-5">
+                <div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <ul class="">
+                    <li class=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     <footer>
       <p class="copyright text-12 mb-0 p-3">Coding Home © 2022 All Rights Reserved</p>
