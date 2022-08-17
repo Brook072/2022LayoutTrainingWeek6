@@ -1,0 +1,21 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import './base/base';
+@import './base/CSSreset';
+
+@import './utility/mixin';
+
+@import './helpers/utilities';
+
+@import './components/type-btn';
+@import './components/course-card';
+@import './components/square-decoration';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index';
+@import './pages/courses';
+@import './pages/course-detail';

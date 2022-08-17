@@ -1,0 +1,26 @@
+.logo_wrapper{
+    max-width: 24px;
+    @include desktop{
+        max-width: 175px;
+    }
+}
+
+header{
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, $primary 50%, $secondary 50%) 2;
+}
+
+.nav-sm{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 74px;
+}
+
+.login-btn{
+    cursor:pointer;
+    .material-icons{
+        margin-right: 6px;
+        font-size: 20px;
+    }
+}

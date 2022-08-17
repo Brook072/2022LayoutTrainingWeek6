@@ -1,0 +1,109 @@
+.text-color-gradient-bottom{
+    background-image: linear-gradient(to bottom, $secondary, $primary);
+    background-clip: text;
+    color:transparent
+}
+
+.text-12{
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.text-14{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-18{
+  font-size: 18px;
+  line-height: 26px
+}
+
+.text-lg-18{
+  @include desktop{
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.text-20{
+  font-size: 20px;
+  line-height: 29px
+}
+
+
+.text-lg-20{
+  @include desktop{
+    font-size: 20px;
+    line-height: 29px
+  }
+}
+
+.text-22{
+  font-size: 22px;
+  line-height: 32px
+}
+
+.text-24{
+  font-size: 24px;
+  line-height: 35px
+}
+
+.text-lg-28{
+  @include desktop{
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.text-32{
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.text-48{
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.text-lg-48{
+  @include desktop{
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.title-border{
+  padding-right: 50px;
+  padding-left: 50px;
+  &::after{
+    content:'';
+    display: block;
+    width: 50px;
+    border-bottom: 3px solid $primary;
+    margin: 0 auto;
+  }
+}
+
+.rounded-8{
+  border-radius: 8px;
+}
+
+.rounded-12{
+  border-radius: 12px;
+}
+
+.rounded-24{
+  border-radius: 24px;
+}
+
+.mb-24{
+  margin-bottom: 24px;
+}
+
+.mb-procedure-items{
+  margin-bottom: 50px;
+  @include desktop{
+    margin-bottom: 74px;
+  }
+}
