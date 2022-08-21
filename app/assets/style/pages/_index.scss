@@ -180,12 +180,14 @@
       }
     }
   }
-  a{
-    font-family: "Azeret Mono", sans-serif;
-    @include desktop{
-      font-size: 18px;
-      line-height: 21px;
-    }
+  
+}
+
+.more-btn{
+  font-family: "Azeret Mono", sans-serif;
+  @include desktop{
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 
