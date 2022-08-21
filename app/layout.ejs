@@ -12,48 +12,12 @@
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="d-flex justify-content-between py-4">
-          <% if(title == '首頁'){ -%>
-          <h1 class="mb-0">
-            <div class="logo_wrapper">
-              <a href="./index.html"><img src="./assets/images/logo.svg" alt="" class="logo d-none d-md-block w-100"></a>
-              <a href="./index.html"><img src="./assets/images/logo2.svg" alt="" class="logo-md d-block d-md-none w-100"></a>
-            </div>
-          </h1>
-          <% } else { -%>
-          <div class="logo_wrapper">
-            <a href=""><img src="./assets/images/logo.svg" alt="" class="logo d-none d-md-block w-100"></a>
-            <a href="./index.html"><img src="./assets/images/logo2.svg" alt="" class="logo-md d-block d-md-none w-100"></a>
-          </div>
-          <% } -%>
-          <span class="material-icons text-primary d-md-none" data-bs-toggle="collapse" data-bs-target=".nav-sm">drag_handle</span>        
-          <nav class="nav align-items-center justify-content-center d-none d-md-flex">
-            <a class="nav-link text-18 text-white" href="./index.html">首頁</a>
-            <a class="nav-link text-18 text-white" href="./courses.html">課程介紹</a>
-            <a class="login-btn nav-link text-18 text-white d-flex align-items-center justify-content-center" href="#">
-              <span class="material-icons">account_circle</span>
-              <span>登入</span>
-            </a>
-          </nav>
-        </div>
-      </div>
-      <nav class="nav nav-sm justify-content-center d-lg-none py-2 bg-tertiary-1 collapse">
-        <a class="nav-link text-18 text-white w-100 text-center py-2" href="./index.html">首頁</a>
-        <a class="nav-link text-18 text-white w-100 text-center py-2" href="./courses.html">課程介紹</a>
-        <a class="login-btn nav-link text-18 d-flex align-items-center justify-content-center text-white w-100 py-2" href="#">
-          <span class="material-icons">account_circle</span>
-          <span>登入</span>
-        </a>
-      </nav>
-    </header>
+    <%- include ("./header.ejs") %>
     <main>
       <%- contents %>
+      <%- include ("./modal.ejs")%>
     </main>
-    <footer>
-      <p class="copyright text-12 mb-0 p-3">Coding Home © 2022 All Rights Reserved</p>
-    </footer>
+    <%- include ("./footer.ejs")%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

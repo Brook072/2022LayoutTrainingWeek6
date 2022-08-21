@@ -1,0 +1,85 @@
+.gradient-btn{
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to right, $secondary, $primary);
+    border: transparent;
+    position: relative;
+    &:hover{
+      &::before{
+        position: absolute;
+        color: $black;
+        background-color: $white;
+        border-radius: 8px;
+        font-size: 18px;
+        line-height: 38px;
+        transform: translateZ(-5px);
+        width: calc(100% - 4px);
+        height: 38px;
+        top:2px;
+        left:2px;
+      }
+    }
+}
+
+.modal-login-btn{
+    &:hover{
+      &::before{
+        content: '登入';
+        border-radius: 2px;
+      }
+    }
+}
+
+.all-course{
+    @include desktop{
+        max-width: 172px;
+    }
+    &:hover{
+      &::before{
+        content: '所有課程列表';
+      }
+    }
+}
+
+.reserve-now{
+  &:hover{
+    &::before{
+      content: '立即預約';
+    }
+  }
+}
+
+
+.to-checkout{
+    @include desktop{
+        max-width: 168px;
+    }
+    &:hover{
+      &::before{
+        content: '前往結賬';
+      }
+    }
+}
+
+.next-step{
+    @include desktop{
+        max-width: 150px;
+    }
+    &:hover{
+      &::before{
+        content: '下一步';
+      }
+    }
+}
+
+.check-other-course{
+    @include desktop{
+        max-width: 204px;
+    }
+    &:hover{
+        &::before{
+          content: '看看其他課程';
+          border-radius: 2px;
+        }
+      }
+}

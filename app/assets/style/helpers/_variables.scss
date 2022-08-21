@@ -72,6 +72,7 @@ $secondary:     #09ACF5 !default;
 $tertiary-1:    #2D2D2D;
 $tertiary-2:    #202020;
 $tertiary-3:    #1C1C1C;
+$tertiary-4:    #C1C1C1;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -88,6 +89,7 @@ $theme-colors: (
   "tertiary-1":   $tertiary-1,
   "tertiary-2":   $tertiary-2,
   "tertiary-3":   $tertiary-3,
+  "tertiary-4":   $tertiary-4,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -263,7 +265,9 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 2,
-  6: $spacer * 3,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 5,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

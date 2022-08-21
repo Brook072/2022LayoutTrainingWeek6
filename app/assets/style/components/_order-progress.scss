@@ -1,0 +1,93 @@
+.order-progress{
+    @include desktop{
+        background-color: $tertiary-3;
+    }
+}
+
+.order-progress-wrapper{
+    @include desktop{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+.bar{
+    position: relative;
+    transform-style: preserve-3d;
+    &::before{
+        content:'';
+        position: absolute;
+        border: 2px solid $tertiary-4;
+        width: calc(50% - 34px);
+        top: 8px;
+        left: 34px;
+        transform: translateZ(-20px);
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        border: 2px solid $tertiary-4;
+        width: calc(50% - 34px);
+        top: 8px;
+        right: 34px;
+        transform: translateZ(-20px);
+    }
+}
+
+.phase-1{
+    &::before{
+        border: 2px solid $tertiary-4;
+        background-color: $tertiary-4;
+    }
+    &::after{
+        border: 2px solid $tertiary-4;
+        background-color: $tertiary-4;
+    }
+}
+
+.phase-2{
+    &::before{
+        border: 2px solid $primary;
+        background-color: $primary;
+    }
+    &::after{
+        border: 2px solid $tertiary-4;
+        background-color: $tertiary-4;
+    }
+}
+
+.phase-3{
+    &::before{
+        border: 2px solid $primary;
+        background-color: $primary;
+    }
+    &::after{
+        border: 2px solid $primary;
+        background-color: $primary;
+    }
+}
+
+.progress-number{
+    color: $white;
+    background-color: $tertiary-2;
+    border: 1px solid $tertiary-4;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    width: 19px;
+    height: 19px;
+    &.in-progress{
+        background-color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+.material-icons.progress-number{
+    color: $white;
+    background-color: $primary;
+    border: 1px solid $primary;
+}
+
+.progress-text{
+    white-space: nowrap;
+}

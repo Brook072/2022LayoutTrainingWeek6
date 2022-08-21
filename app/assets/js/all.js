@@ -9,3 +9,9 @@ const swiper = new Swiper('.swiper', {
     prevEl: ".pagination-arrow-prev",
   },
 });
+
+const dateSelect = document.querySelector('input[name="dateSelect"]');
+
+const datepicker = new Datepicker(dateSelect, {
+  buttonClass: 'btn',
+}); 

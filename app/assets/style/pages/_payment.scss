@@ -1,0 +1,13 @@
+.payment-info{
+    @include desktop {
+        max-width: 416px;
+        margin: 0 auto;
+    }
+}
+
+.payment-desribe{
+    text-align: center;
+    @include desktop{
+        text-align: left;
+    }
+}

@@ -1,0 +1,61 @@
+.modal-dialog{
+    @include desktop{
+        max-width: 636px;
+    }
+}
+
+.modal-content{
+    border-radius: 0;
+    border: 1px solid $white;
+    background-color: $tertiary-1;
+    @include desktop{
+        width: 100%;
+    }
+}
+
+.modal-content-wrapper{
+    @include desktop{
+        max-width: 331px;
+        margin: 0 auto;
+    }
+}
+
+.modal-header, .modal-body,.modal-footer{
+    padding: 0;
+}
+
+.modal-header{
+    border-bottom: 0;
+}
+
+.modal-body{
+    @include desktop{
+        .checkout-btn{
+            max-width: none;
+        }
+    }
+}
+
+.modal-footer{
+    border-top: 0;
+    position: relative;
+    transform-style: preserve-3d;
+    &::before{
+        content:'';
+        position: absolute;
+        width: 100%;
+        border: 1px solid $tertiary-4;
+        top: 14px;
+        left: 0;
+        transform: translateZ(-10px);
+    }
+}
+
+.other-login-btn{
+    width: 100%;
+}
+
+.login-btn-logo{
+    width: 24px;
+    height: 24px;
+}

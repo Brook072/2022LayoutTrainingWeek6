@@ -8,35 +8,31 @@
         border: 1px solid $primary;
       }
     }
-  }
-  
-  .lecturer-pic{
-    width: 100px;
-    height: 100px;
-    border-radius: 48px;
-    margin: 0 auto;
-  }
-  
-  .course-name{
-    @include desktop{
-      height: 58px;
-    }
-  }
+}
 
-  .course-name.course-page{
-    @include desktop{
-      padding-top: 6px;
-      height: auto;
-      line-height: 35px;
-    }
-  }
+.lecturer-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 48px;
+  margin: 0 auto;
+}
 
-  .price-wrapper{
-    @include desktop{
-      padding-left: 60px;
-    }
+.course-name{
+  @include desktop{
+    height: 58px;
   }
-  
-  .btn.course-btn{
-    background-image: linear-gradient(to right, $secondary, $primary);
+}
+
+.course-name.course-page{
+  @include desktop{
+    padding-top: 6px;
+    height: auto;
+    line-height: 35px;
   }
+}
+
+.price-wrapper{
+  @include desktop{
+    padding-left: 60px;
+  }
+}

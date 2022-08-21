@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Home - <%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  <body>
+    <%- include ("./header.ejs") %>
+    <main>
+      <%- contents %>
+      <section class="course py-6 py-lg-8">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="title-border mb-4 mb-lg-6">
+                <h2 class="text-22 text-white text-center fw-bold mb-3">其他人也看了這些課程</h2>
+            </div>
+            <ul class="row align-items-center justify-content-between mb-lg-6">
+                <li class="col-lg-3">
+                    <div class="course-item bg-tertiary-1 rounded-24 pt-4 mb-3 mb-lg-0">
+                        <div>
+                            <img src="./assets/images/teacher01.jpg" alt="" class="lecturer-pic d-block mb-2 text-center">
+                            <p class="text-white text-center mb-4">Belinda</p>
+                        </div>
+                        <div class="px-5 border-bottom border-white">
+                            <p class="course-name text-20 text-white fw-bold mb-2">基礎前端 - HTML</p>
+                            <p class="text-primary mb-2">前端語言</p>
+                            <p class="text-white pb-3 lh-base">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入...</p>
+                        </div>
+                        <div class="text-white text-center py-3">
+                            <span class="me-2">50分鐘</span><span class="text-32 fw-bold">NT1600</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-3">
+                    <div class="course-item bg-tertiary-1 rounded-24 pt-4 mb-3 mb-lg-0">
+                        <div>
+                            <img src="./assets/images/teacher02.jpg" alt="" class="lecturer-pic d-block mb-2 text-center">
+                            <p class="text-white text-center mb-4">Guava</p>
+                        </div>
+                        <div class="px-5 border-bottom border-white">
+                            <p class="course-name text-20 text-white fw-bold mb-2">2022 Python 全攻略｜從入門到實務</p>
+                            <p class="text-primary mb-2">後端語言</p>
+                            <p class="text-white pb-3 lh-base">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系...</p>
+                        </div>
+                        <div class="text-white text-center py-3">
+                            <span class="me-2">50分鐘</span><span class="text-32 fw-bold">NT2200</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-3">
+                    <div class="course-item bg-tertiary-1 rounded-24 pt-4 mb-3 mb-lg-0">
+                        <div>
+                            <img src="./assets/images/teacher03.jpg" alt="" class="lecturer-pic d-block mb-2 text-center">
+                            <p class="text-white text-center mb-4">Joe</p>
+                        </div>
+                        <div class="px-5 border-bottom border-white">
+                            <p class="course-name text-20 text-white fw-bold mb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</p>
+                            <p class="text-primary mb-2">行動應用開發</p>
+                            <p class="text-white pb-3 lh-base">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的...</p>
+                        </div>
+                        <div class="text-white text-center py-3">
+                            <span class="me-2">50分鐘</span><span class="text-32 fw-bold">NT1800</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-3">
+                    <div class="course-item bg-tertiary-1 rounded-24 pt-4">
+                        <div>
+                            <img src="./assets/images/teacher04.jpg" alt="" class="lecturer-pic d-block mb-2 text-center">
+                            <p class="text-white text-center mb-4">Lina</p>
+                        </div>
+                        <div class="px-5 border-bottom border-white">
+                            <p class="course-name text-20 text-white fw-bold mb-2">Linux 零基礎七天入門｜入門到實務</p>
+                            <p class="text-primary mb-2">作業系統與伺服器</p>
+                            <p class="text-white pb-3 lh-base">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。...</p>
+                        </div>
+                        <div class="text-white text-center py-3">
+                            <span class="me-2">50分鐘</span><span class="text-32 fw-bold">NT1100</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <%- include ("./modal.ejs")%>
+    </main>
+    <%- include ("./footer.ejs")%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

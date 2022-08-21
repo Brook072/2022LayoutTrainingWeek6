@@ -1,1 +1,20 @@
+.lecturer-info-item{
+    span{
+        white-space: nowrap;
+    }
+}
 
+.course-time-arrow
+
+.learning-list{
+    list-style: square;
+    li::marker{
+        color:$primary
+    }
+}
+
+.course-time-arrow{
+    height:32px;
+    background-image: linear-gradient(to bottom, $secondary, $primary);
+    border-radius: 16px;
+}
