@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Home - 信用卡付款</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  <body>
+    <header>
+  <div class="container">
+    <div class="d-flex justify-content-between py-4">
+            <div class="logo_wrapper">
+        <a href="./index.html"><img src="./assets/images/logo.svg" alt="" class="logo d-none d-md-block w-100"></a>
+        <a href="./index.html"><img src="./assets/images/logo2.svg" alt="" class="logo-md d-block d-md-none w-100"></a>
+      </div>
+            <span class="material-icons text-primary d-md-none" data-bs-toggle="collapse" data-bs-target=".nav-sm">drag_handle</span>        
+      <nav class="nav align-items-center justify-content-center d-none d-md-flex">
+        <a class="nav-link text-18 text-white" href="./index.html">首頁</a>
+        <a class="nav-link text-18 text-white" href="./courses.html">課程介紹</a>
+        <a class="login-btn nav-link text-18 text-white d-flex align-items-center justify-content-center" href="#" data-bs-toggle="modal" data-bs-target="#login-modal">
+          <span class="material-icons">account_circle</span>
+          <span>登入</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+  <nav class="nav nav-sm justify-content-center d-lg-none py-2 bg-tertiary-1 collapse">
+    <a class="nav-link text-18 text-white w-100 text-center py-2" href="./index.html">首頁</a>
+    <a class="nav-link text-18 text-white w-100 text-center py-2" href="./courses.html">課程介紹</a>
+    <a class="login-btn nav-link text-18 d-flex align-items-center justify-content-center text-white w-100 py-2" href="#" data-bs-toggle="modal" data-bs-target="#login-modal">
+      <span class="material-icons">account_circle</span>
+      <span>登入</span>
+    </a>
+  </nav>
+</header>
+        <main>
+          <section class="order-progress py-4 mb-lg-7">
+        <div class="container">
+          <div class="order-progress-wrapper">
+                          <div class="bar phase-2 d-flex justify-content-between px-4">
+                <span class="material-icons progress-number text-center mb-1">done</span>
+                <span class="progress-number in-progress text-center mb-1">2</span>
+                <span class="progress-number text-center mb-1">3</span>
+                        </div>
+                        <div class="progress-text d-flex justify-content-between">
+              <p class="progress-text text-center text-primary">課程報名</p>
+              <p class="progress-text text-center text-primary">信用卡付款</p>
+              <p class="progress-text text-center text-tertiary-4">付款成功</p>
+                        </div>
+          </div>
+        </div>
+      </section>
+      
+<section class="pb-6 pb-lg-8">
+    <div class="container">
+        <div class="payment-info bg-tertiary-3 px-4 px-lg-5 py-4 py-lg-6">
+            <h2 class="text-24 text-white text-center fw-bold mb-4 mb-lg-5">信用卡付款</h2>
+            <div class="mb-3 mb-lg-4">
+                <p class="payment-desribe text-18 text-white fw-bold mb-3">請輸入信用卡資訊進行付款</p>
+                <form action="">
+                    <ul class="row gx-lg-7">
+                        <li class="col-lg-12 mb-3 mb-lg-4">
+                            <div>
+                                <label for="credit-card-number" class="form-label order-page text-tertiary-4">信用卡號碼</label>
+                                <input type="text" class="form-control text-tertiary-4 bg-transparent" name="" id="credit-card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                            </div>
+                        </li>
+                        <li class="col-lg-12 mb-3 mb-lg-4">
+                            <div>
+                                <label for="credit-card-safe-code" class="form-label order-page text-tertiary-4">安全碼</label>
+                                <input type="text" class="form-control text-tertiary-4 bg-transparent" name="" id="credit-card-safe-code" placeholder="***">
+                            </div>
+                        </li>
+                        <li class="col-lg-12">
+                            <div>
+                                <label for="validate-date" class="form-label order-page text-tertiary-4">有效日期</label>
+                                <input type="text" class="form-control text-tertiary-4 bg-transparent" name="" id="validate-date" placeholder="(MM/YY)">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="d-lg-flex align-items-center justify-content-between">
+                <p class="course-price text-18 text-white mb-4 mb-lg-0">NT$1600</p>
+                <a href="./payment-done.html" class="btn gradient-btn next-step rounded8 text-white text-18 py-2">下一步</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <div class="modal" id="login-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content pt-3 pb-6 px-4">
+        <div class="modal-content-wrapper">
+          <div class="modal-header justify-content-end">
+          <span class="material-icons text-24 lh-1 text-white" data-bs-dismiss="modal" aria-label="Close">close</span>
+          </div>
+          <div class="modal-body mb-4">
+            <h5 class="text-24 text-white text-center fw-bold">登入</h5>
+            <form action="" class="mb-3">
+              <ul>
+                <li>
+                  <div class="mb-3">
+                    <label for="login-account" class="form-label order-page text-tertiary-4">Email</label>
+                    <input type="email" class="form-control text-tertiary-4 bg-transparent" name="" id="login-account" placeholder="請輸入信箱">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="login-password" class="form-label order-page text-tertiary-4">密碼</label>
+                    <input type="password" class="form-control text-tertiary-4 bg-transparent" name="" id="login-password" placeholder="請輸入密碼">
+                  </div>
+                </li>
+              </ul>
+            </form>
+            <a href="#" class="btn gradient-btn modal-login-btn rounded8 text-white text-18 py-2 mw-lg-100">登入</a>
+          </div>
+          <div class="modal-footer pt-0 justify-content-center">
+            <span class="bg-tertiary-1 text-tertiary-4 px-3 mb-3">其他登入方式</span>
+            <a href="#" class="other-login-btn d-flex justify-content-center border border-white rounded py-2 mb-3 mb-lg-4">
+              <div>
+                <img src="./assets/images/icon_fb.svg" alt="" class="login-btn-logo me-5">
+                <span class="text-white">Facebook 登入</span>
+              </div>
+            </a>
+            <a href="#" class="other-login-btn d-flex justify-content-center border border-white rounded py-2">
+              <div>
+                <img src="./assets/images/icon_google.svg" alt="" class="login-btn-logo me-5">
+                <span class="text-white">Google 登入</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </main>
+    <footer>
+  <p class="copyright text-12 mb-0 p-3">Coding Home © 2022 All Rights Reserved</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
