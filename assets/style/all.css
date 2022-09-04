@@ -13407,7 +13407,8 @@ html {
   content: '';
   display: block;
   width: 50px;
-  border-bottom: 3px solid #62DB54;
+  background-color: #62DB54;
+  border-bottom: 1.5px solid #62DB54;
   margin: 0 auto;
 }
 
@@ -13463,9 +13464,13 @@ html {
   margin: 0 auto;
 }
 
+.course-html {
+  margin-bottom: 8px;
+}
+
 @media screen and (min-width: 992px) {
-  .course-name {
-    height: 58px;
+  .course-html {
+    margin-bottom: 37px;
   }
 }
 
@@ -13675,11 +13680,29 @@ html {
 
 .other-login-btn {
   width: 100%;
+  color: #fff;
+}
+
+.other-login-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .login-btn-logo {
   width: 24px;
   height: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .fb-login-text {
+    margin-right: 72px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .google-login-text {
+    margin-right: 82px;
+  }
 }
 
 .gradient-btn {
@@ -13761,7 +13784,7 @@ html {
   max-width: 24px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .logo_wrapper {
     max-width: 175px;
   }
@@ -13963,11 +13986,13 @@ footer {
     opacity: 1;
   }
   .feature-item:hover .title-border::after {
-    border: 3px solid #62DB54;
+    background-color: #62DB54;
+    border: 1.5px solid #62DB54;
   }
   .feature-item .title-border::after {
+    background-color: #fff;
     margin-left: 0;
-    border: 3px solid white;
+    border: 1.5px solid white;
   }
   .feature-item .material-icons {
     color: white;
@@ -14189,12 +14214,19 @@ footer {
 }
 
 .reserve-btn {
+  background-color: transparent;
+  color: #fff;
   border-radius: 4px;
   cursor: pointer;
 }
 
+.reserve-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .course-type-list {
-  overflow-x: scroll;
+  overflow-x: auto;
   margin: 0 auto;
 }
 
@@ -14215,11 +14247,11 @@ footer {
   white-space: nowrap;
 }
 
-.course-time-arrow .learning-list {
+.learning-list {
   list-style: square;
 }
 
-.course-time-arrow .learning-list li::marker {
+.learning-list li::marker {
   color: #62DB54;
 }
 
@@ -14316,15 +14348,6 @@ footer {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-}
-
-.date-select-text {
-  position: absolute;
-  left: 12px;
-  bottom: 6px;
-  -webkit-transform: translateZ(-10px);
-          transform: translateZ(-10px);
-  opacity: 0.5;
 }
 
 .course-price {

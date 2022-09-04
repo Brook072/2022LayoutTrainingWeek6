@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
   <body>
-    <header>
+    <header class="bg-tertiary-1">
   <div class="container">
     <div class="d-flex justify-content-between py-4">
             <div class="logo_wrapper">
@@ -59,40 +59,48 @@
                 <div>
                     <h2 class="text-white text-20 mb-3">老師介紹</h2>
                     <div class="course-item mb-6 d-lg-flex flex-lg-column bg-tertiary-1 rounded-24 p-4">
-                        <div class="d-lg-flex row flex-wrap gx-lg-4">
+                        <ul class="d-lg-flex row flex-wrap gx-lg-4">
                             <div class="col-lg-6">
-                                <div class="lecturer-info-item d-flex align-items-start mb-3">
-                                    <div class="d-flex align-items-center me-2">
-                                        <span class="material-icons text-primary text-24 lh-1 me-2">school</span>
-                                        <span class="text-tertiary-4">學歷</span>
+                                <li>
+                                    <div class="lecturer-info-item d-flex align-items-start mb-3">
+                                        <div class="d-flex align-items-center me-2">
+                                            <span class="material-icons text-primary text-24 lh-1 me-2">school</span>
+                                            <span class="text-tertiary-4">學歷</span>
+                                        </div>
+                                        <p class="text-white">國立中央大學 資訊工程 碩士 畢業</p>
                                     </div>
-                                    <p class="text-white">國立中央大學 資訊工程 碩士 畢業</p>
-                                </div>
-                                <div class="lecturer-info-item d-flex align-items-start mb-3 mb-lg-0">
-                                    <div class="d-flex align-items-center me-2">
-                                        <span class="material-icons text-primary text-24 lh-1 me-2">business_center</span>
-                                        <span class="text-tertiary-4">經歷</span>
+                                </li>
+                                <li>
+                                    <div class="lecturer-info-item d-flex align-items-start mb-3 mb-lg-0">
+                                        <div class="d-flex align-items-center me-2">
+                                            <span class="material-icons text-primary text-24 lh-1 me-2">business_center</span>
+                                            <span class="text-tertiary-4">經歷</span>
+                                        </div>
+                                        <p class="text-white">2020.08 - 迄今 上市企業 韌體工程師</p>
                                     </div>
-                                    <p class="text-white">2020.08 - 迄今 上市企業 韌體工程師</p>
-                                </div>
+                                </li>
                             </div>
                             <div class="col-lg-6">
-                                <div class="lecturer-info-item d-flex align-items-start mb-3">
-                                    <div class="d-flex align-items-center me-2">
-                                        <span class="material-icons text-primary text-24 lh-1 me-2">translate</span>
-                                        <span class="text-tertiary-4">語言</span>
+                                <li>
+                                    <div class="lecturer-info-item d-flex align-items-start mb-3">
+                                        <div class="d-flex align-items-center me-2">
+                                            <span class="material-icons text-primary text-24 lh-1 me-2">translate</span>
+                                            <span class="text-tertiary-4">語言</span>
+                                        </div>
+                                        <p class="text-white">中文/英文</p>
                                     </div>
-                                    <p class="text-white">中文/英文</p>
-                                </div>
-                                <div class="lecturer-info-item d-flex align-items-start">
-                                    <div class="d-flex align-items-center me-2">
-                                        <span class="material-icons text-primary text-24 lh-1 me-2">military_tech</span>
-                                        <span class="text-tertiary-4">等級</span>
+                                </li>
+                                <li>
+                                    <div class="lecturer-info-item d-flex align-items-start">
+                                        <div class="d-flex align-items-center me-2">
+                                            <span class="material-icons text-primary text-24 lh-1 me-2">military_tech</span>
+                                            <span class="text-tertiary-4">等級</span>
+                                        </div>
+                                        <p class="text-white">入門</p>
                                     </div>
-                                    <p class="text-white">入門</p>
-                                </div>
+                                </li>
                             </div>
-                        </div>
+                        </ul>
                         <div class="pt-4 pt-lg-5 mt-4 mt-lg-5 border-top border-white">
                             <p class="text-white">目前任職於上市企業 韌體工程師，撰寫各種微控制器韌體程式，如作業系統、系統軟體、裝置控制程式、驅動程式、網路應用程式、系統整合程式、數位訊號處理程式等。<br><br>興趣是幫助他人學習程式語言，我相信，透過清楚的講解與示範，任何人都可以學好編寫程式與電腦科學中的複雜概念</p>
                         </div>
@@ -306,17 +314,13 @@
           </div>
           <div class="modal-footer pt-0 justify-content-center">
             <span class="bg-tertiary-1 text-tertiary-4 px-3 mb-3">其他登入方式</span>
-            <a href="#" class="other-login-btn d-flex justify-content-center border border-white rounded py-2 mb-3 mb-lg-4">
-              <div>
-                <img src="./assets/images/icon_fb.svg" alt="" class="login-btn-logo me-5">
-                <span class="text-white">Facebook 登入</span>
-              </div>
+            <a href="#" class="other-login-btn d-flex justify-content-center justify-content-lg-between border border-white rounded px-lg-5 py-2 mb-3 mb-lg-4">
+              <img src="./assets/images/icon_fb.svg" alt="" class="login-btn-logo me-5 me-lg-auto">
+              <span class="fb-login-text">Facebook 登入</span>
             </a>
-            <a href="#" class="other-login-btn d-flex justify-content-center border border-white rounded py-2">
-              <div>
-                <img src="./assets/images/icon_google.svg" alt="" class="login-btn-logo me-5">
-                <span class="text-white">Google 登入</span>
-              </div>
+            <a href="#" class="other-login-btn d-flex justify-content-center justify-content-lg-between border border-white rounded px-lg-5 py-2">
+              <img src="./assets/images/icon_google.svg" alt="" class="login-btn-logo me-5 me-lg-auto">
+              <span class="google-login-text">Google 登入</span>
             </a>
           </div>
         </div>
