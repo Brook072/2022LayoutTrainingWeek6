@@ -124,14 +124,16 @@
       }
       .title-border{
         &::after{
-          border: 3px solid $primary;
+          background-color: $primary;
+          border: 1.5px solid $primary;
         }
       }
     }
     .title-border{
       &::after{
+        background-color: $white;
         margin-left: 0;
-        border: 3px solid white;
+        border: 1.5px solid white;
       }
     }
     .material-icons{
@@ -327,6 +329,12 @@
 }
 
 .reserve-btn{
+  background-color: transparent;
+  color: $white;
   border-radius: 4px;
   cursor:pointer;
+  &:hover{
+    background-color: $white;
+    color: $black;
+  }
 }

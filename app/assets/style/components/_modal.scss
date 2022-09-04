@@ -53,9 +53,26 @@
 
 .other-login-btn{
     width: 100%;
+    color: $white;
+    &:hover{
+        background-color: $white;
+        color: $black
+    }
 }
 
 .login-btn-logo{
     width: 24px;
     height: 24px;
+}
+
+.fb-login-text{
+    @include desktop{
+        margin-right: 72px;
+    }
+}
+
+.google-login-text{
+    @include desktop{
+        margin-right: 82px;
+    }
 }

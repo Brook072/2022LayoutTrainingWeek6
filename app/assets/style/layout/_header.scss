@@ -1,6 +1,6 @@
 .logo_wrapper{
     max-width: 24px;
-    @include desktop{
+    @include tablet{
         max-width: 175px;
     }
 }

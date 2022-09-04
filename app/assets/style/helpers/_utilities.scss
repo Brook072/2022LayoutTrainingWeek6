@@ -80,7 +80,8 @@
     content:'';
     display: block;
     width: 50px;
-    border-bottom: 3px solid $primary;
+    background-color: $primary;
+    border-bottom: 1.5px solid $primary;
     margin: 0 auto;
   }
 }

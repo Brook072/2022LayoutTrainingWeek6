@@ -1,5 +1,5 @@
 .course-type-list{
-    overflow-x: scroll;
+    overflow-x: auto;
     &::-webkit-scrollbar{
         display: none;
     }

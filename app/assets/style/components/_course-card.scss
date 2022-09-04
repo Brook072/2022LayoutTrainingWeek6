@@ -1,5 +1,3 @@
-
-
 .course-item{
     @include desktop{
       border: 1px solid $tertiary-1;
@@ -17,9 +15,10 @@
   margin: 0 auto;
 }
 
-.course-name{
+.course-html{
+  margin-bottom: 8px;
   @include desktop{
-    height: 58px;
+    margin-bottom: 37px;
   }
 }
 
